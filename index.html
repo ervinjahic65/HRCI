@@ -893,69 +893,6 @@
                     <div class="footer-legal__wrap">
                         <div class="legal-links__wrap">
                             <div class="legal-footer-nav-container">
-                                <div class="weglot-container">
-                                    <div class="custom-weglot-dropdown" x-data="{    is_opened: false,    translate(url) {        window.location.href = url;    }}">
-                                        <div class="current-language" @click="is_opened = !is_opened">
-                                            <div class="language-icon">
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-di-res-id="8b025f52-e8e1bad6" data-di-rand="1742465180087">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.545 10.634C16.1543 8.92674 16.1543 7.06126 15.545 5.354C15.5377 5.32827 15.5284 5.30318 15.517 5.279C14.3726 2.12016 11.3777 0.0118632 8.01798 0H7.98298C4.62607 0.0112815 1.63325 2.11712 0.488977 5.273C0.474387 5.30271 0.46299 5.33389 0.454977 5.366C-0.151659 7.06961 -0.151659 8.93039 0.454977 10.634C0.46299 10.6661 0.474387 10.6973 0.488977 10.727C1.63199 13.8913 4.63556 15.9999 7.99998 15.9999C11.3644 15.9999 14.368 13.8913 15.511 10.727C15.5256 10.6973 15.537 10.6661 15.545 10.634ZM5.53219 10C5.40793 9.33588 5.3553 8.66035 5.37519 7.985C5.35545 7.31973 5.40708 6.65426 5.52919 6H10.4682C10.5925 6.66412 10.6451 7.33965 10.6252 8.015C10.6449 8.68027 10.5933 9.34574 10.4712 10H5.53219ZM10.2259 11C9.79334 12.4181 9.03043 13.7132 7.99986 14.779C6.97003 13.7132 6.20812 12.4179 5.77686 11H10.2259ZM0.999977 8C1.00039 7.32253 1.09977 6.64874 1.29498 6H4.51998C4.40705 6.65536 4.35849 7.32019 4.37498 7.985C4.35798 8.65986 4.40722 9.33475 4.52198 10H1.29998C1.10308 9.35151 1.00201 8.67772 0.999977 8ZM5.77398 5C6.20688 3.58211 6.96974 2.28704 7.99998 1.221C9.02999 2.2867 9.79193 3.58196 10.223 5H5.77398ZM11.4741 6H14.7011C15.0945 7.30432 15.0945 8.69568 14.7011 10H11.4801C11.593 9.34464 11.6416 8.67981 11.6251 8.015C11.6421 7.34014 11.5929 6.66525 11.4781 6H11.4741ZM11.2568 5.00001C10.8733 3.57871 10.1915 2.25536 9.25684 1.11801C11.4675 1.52678 13.3483 2.97029 14.3148 5.00001H11.2568ZM6.74798 1.118C5.81159 2.25525 5.12749 3.57846 4.74098 5H1.68498C2.65254 2.96902 4.53547 1.5253 6.74798 1.118ZM1.68498 11H4.74298C5.12906 12.4213 5.81246 13.7445 6.74798 14.882C4.5354 14.4749 2.65241 13.0311 1.68498 11ZM9.25198 14.881C10.189 13.7445 10.8732 12.4215 11.259 11H14.315C13.3477 13.031 11.4645 14.4745 9.25198 14.881Z" fill="#071E3C"></path>
-                                                </svg>
-                                            </div>
-                                            <p>
-                                                English        
-                                            </p>
-                                            <div class="caret" :class="is_opened ? &#39;opened&#39; : &#39;&#39;">
-                                                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-di-res-id="33be3837-32172627" data-di-rand="1742465180087">
-                                                    <path d="M0.742628 14.8136L7.10663 8.44963C7.2941 8.2621 7.39941 8.00779 7.39941 7.74263C7.39941 7.47746 7.2941 7.22316 7.10663 7.03563L0.742628 0.671629" stroke="#CCCCCC" stroke-linecap="round"></path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="menu" x-show="is_opened" x-collapse="" @click.outside="is_opened = !is_opened" style="display: none; height: 0px; overflow: hidden;" hidden="">
-                                            <p>SELECT YOUR REGION &amp; LANGUAGE</p>
-                                            <ul>
-                                                <li class="lang-en">
-                                                    <p @click="translate(&#39;https://www.medallia.com/solutions/market-research/?source=Marketing%20-%20Paid%20Search&amp;gad_source=1&#39;)">                    English
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p @click="translate(&#39;https://www.medallia.com/fr/solutions/market-research/&#39;)">
-                                                        France (Français)
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p @click="translate(&#39;https://www.medallia.com/de/solutions/market-research/&#39;)">
-                                                        Germany (Deutsch)
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p @click="translate(&#39;https://www.medallia.com/es/solutions/market-research/&#39;)">
-                                                        Spain (Español)
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p @click="translate(&#39;https://www.medallia.com/it/solutions/market-research/&#39;)">
-                                                        Italy (Italiano)
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p @click="translate(&#39;https://www.medallia.com/ja/solutions/market-research/&#39;)">
-                                                        Japan (日本語)
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p @click="translate(&#39;https://www.medallia.com/ko/solutions/market-research/&#39;)">
-                                                        Korea (한국어)
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p @click="translate(&#39;https://www.medallia.com/pt-br/solutions/market-research/&#39;)">
-                                                        Brazil (Português Brasileiro)
-                                                    </p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
                                 <a data-track-click="sub-nav" href="https://www.medallia.com/terms-of-use" data-di-id="di-id-df8526a5-62ff01bd">Terms of
                                 Use</a>
                                 <a data-track-click="sub-nav" href="https://www.medallia.com/privacy-policy" data-di-id="di-id-b5002067-54c82985">Privacy
@@ -980,40 +917,5 @@
                 </div>
             </div>
         </footer>
-        <div id="consent_blackbar"></div>
-        
-        
-        <link rel="dns-prefetch" href="https://cdn.decibelinsight.net/">
-        <link rel="dns-prefetch" href="https://collection.decibelinsight.net/">
-        
-        <link rel="dns-prefetch" href="https://cdn.decibelinsight.net/">
-        <link rel="dns-prefetch" href="https://collection.decibelinsight.net/">
-        
-        
-        <div class="weglot-container wg-default" data-switcher-id="1" id="weglot-switcher-1">
-            <div data-wg-notranslate="true" aria-expanded="false" aria-haspopup="listbox" aria-label="Language Switcher" aria-controls="language-list" role="combobox" tabindex="0" class="weglot_switcher vertical_expand closed wg-down wg-right" >
-                <div aria-label="Language selected: English" tabindex="-1" class="language-option active-language" style="background-color: rgb(255, 255, 255);"><a href="https://www.medallia.com/solutions/market-research/?source=Marketing%20-%20Paid%20Search&amp;utm_campaign=medallia_emea_market-research&amp;utm_source=google-ads&amp;utm_medium=text-ad&amp;utm_content=solutions-market-research&amp;utm_term=market%20research%20solutions_b_g_c_724634910944&amp;gad_source=1&amp;gclid=Cj0KCQjw1um-BhDtARIsABjU5x6gf67X0mkkjHVTov7CnUNRTqXbQMiMjFoJw5ATEtjAQ9ECaDfe_PEaAmJ-EALw_wcB#" aria-label="EN" tabindex="-1" id="weglot-language-en" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" data-di-id="#weglot-language-en"><img src="files/us.svg" width="20" height="20" alt="English flag" class="wg-flag">EN</a></div>
-                <div role="listbox" aria-label="Language list" class="language-list">
-                    <div role="option" tabindex="-1" class="language-option" style="background-color: rgb(255, 255, 255);"><a href="https://www.medallia.com/fr/solutions/market-research/?source=Marketing%20-%20Paid%20Search&amp;gad_source=1" aria-label="FR" tabindex="-1" id="weglot-language-fr" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" data-di-id="#weglot-language-fr"><img src="files/fr.svg" width="20" height="20" alt="Français flag" class="wg-flag">FR</a></div>
-                    <div role="option" tabindex="-1" class="language-option" style="background-color: rgb(255, 255, 255);"><a href="https://www.medallia.com/de/solutions/market-research/?source=Marketing%20-%20Paid%20Search&amp;gad_source=1" aria-label="DE" tabindex="-1" id="weglot-language-de" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" data-di-id="#weglot-language-de"><img src="files/de.svg" width="20" height="20" alt="Deutsch flag" class="wg-flag">DE</a></div>
-                    <div role="option" tabindex="-1" class="language-option" style="background-color: rgb(255, 255, 255);"><a href="https://www.medallia.com/es/soluciones/estudios-de-mercado/?source=Marketing%20-%20Paid%20Search&amp;gad_source=1" aria-label="ES" tabindex="-1" id="weglot-language-es" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" data-di-id="#weglot-language-es"><img src="files/es.svg" width="20" height="20" alt="Español flag" class="wg-flag">ES</a></div>
-                    <div role="option" tabindex="-1" class="language-option" style="background-color: rgb(255, 255, 255);"><a href="https://www.medallia.com/it/solutions/market-research/?source=Marketing%20-%20Paid%20Search&amp;gad_source=1" aria-label="IT" tabindex="-1" id="weglot-language-it" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" data-di-id="#weglot-language-it"><img src="files/it.svg" width="20" height="20" alt="Italiano flag" class="wg-flag">IT</a></div>
-                    <div role="option" tabindex="-1" class="language-option" style="background-color: rgb(255, 255, 255);"><a href="https://www.medallia.com/ja/solutions/market-research/?source=Marketing%20-%20Paid%20Search&amp;gad_source=1" aria-label="JA" tabindex="-1" id="weglot-language-ja" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" data-di-id="#weglot-language-ja"><img src="files/jp.svg" width="20" height="20" alt="日本語 flag" class="wg-flag">JA</a></div>
-                    <div role="option" tabindex="-1" class="language-option" style="background-color: rgb(255, 255, 255);"><a href="https://www.medallia.com/ko/solutions/market-research/?source=Marketing%20-%20Paid%20Search&amp;gad_source=1" aria-label="KO" tabindex="-1" id="weglot-language-ko" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" data-di-id="#weglot-language-ko"><img src="files/kr.svg" width="20" height="20" alt="한국어 flag" class="wg-flag">KO</a></div>
-                    <div role="option" tabindex="-1" class="language-option" style="background-color: rgb(255, 255, 255);"><a href="https://www.medallia.com/pt-br/solucoes/pesquisa-de-mercado/?source=Marketing%20-%20Paid%20Search&amp;gad_source=1" aria-label="BR" tabindex="-1" id="weglot-language-br" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" data-di-id="#weglot-language-br"><img src="files/br.svg" width="20" height="20" alt="Português Brasileiro flag" class="wg-flag">BR</a></div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="mktoStyleLoaded" style="display: none; border-top-color: rgb(18, 52, 86);"></div>
-        
-        <span id="kampyleButtonContainer">
-            <button id="nebula_div_btn" style="border: none; position: fixed !important; bottom: 374.85px;" alt="Feedback" tabindex="0" class="kampyle_vertical_button kampyle_left  wcagOutline " data-di-id="#nebula_div_btn">
-                <div class="kampyle_button"></div>
-                <div data-aut="feedback" class="kampyle_button-text">Feedback</div>
-            </button>
-        </span>
-        
-        <form __bizdiag="-282859181" __biza="W___" novalidate="novalidate" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); visibility: hidden; position: absolute; top: -500px; left: -1000px; width: 1905px;" class="mktoForm mktoHasWidth mktoLayoutAbove"></form>
     </body>
 </html>
