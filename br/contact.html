@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contate-nos - Crowd Consumer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Cabeçalho -->
+  <header class="bg-white py-4 shadow">
+    <div class="container mx-auto flex items-center px-4">
+      <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-12 w-auto">
+      </a>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="bg-gray-100 flex-grow py-8">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold text-gray-800 mb-6">Contate-nos</h1>
+      <p class="text-gray-700 mb-6">
+        Adoraríamos saber de você! Seja se você tiver alguma dúvida sobre nossos serviços, precisar de assistência ou simplesmente quiser compartilhar seus comentários, nossa equipe está pronta para responder todas as suas consultas. Por favor, preencha o formulário abaixo ou utilize as informações de contato fornecidas, e responderemos o mais breve possível.
+      </p>
+      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <form id="form">
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+              Nome
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Seu nome" required>
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+              E-mail
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Seu e-mail" required>
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">
+              Assunto
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="subject" type="text" placeholder="Assunto" required>
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+              Mensagem
+            </label>
+            <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="5" placeholder="Sua mensagem aqui..." required></textarea>
+          </div>
+          <div class="flex items-center justify-between">
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+              Enviar Mensagem
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-white py-6 mt-auto">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-600 mb-2">
+        CNPJ: 78.989.613/0001-90 <br>
+        Inscrição Estadual: 8324829-77 <br>
+        Endereço: 974 Rua Itaguaí, Mangabeira, Feira de Santana, 44056-516 <br>
+        Telefone: (75) 2871-8215 <br>
+      </p>
+      <p class="text-gray-600 mb-4">&copy; 2025 Crowd Consumer. Todos os direitos reservados.</p>
+      <nav>
+        <a href="terms.html" class="text-blue-600 hover:underline mx-2">Termos e Condições</a>
+        <a href="privacy.html" class="text-blue-600 hover:underline mx-2">Política de Privacidade</a>
+        <a href="about.html" class="text-blue-600 hover:underline mx-2">Sobre Nós</a>
+        <a href="contact.html" class="text-blue-600 hover:underline mx-2">Contate-nos</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      // Substitui o conteúdo do formulário por um gif de carregamento centralizado
+      document.getElementById("form").innerHTML = 
+        '<div class="flex justify-center items-center"><img src="files/loading.gif" width="80" alt="Carregando..."></div>';
+
+      setTimeout(() => {
+        document.getElementById("form").innerHTML = 
+          '<p class="text-center text-xl text-black font-bold">Obrigado pelo seu registro. Um representante entrará em contato com você em breve.</p>';
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
