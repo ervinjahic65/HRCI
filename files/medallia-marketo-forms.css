@@ -147,7 +147,7 @@
 
 .form .mktoForm select.mktoField {
   -webkit-appearance: none;
-  background-image: url("https://www.medallia.com/wp-content/themes/medallia-2017/images/contact-us-form-dropdown-arrow.svg");
+  background-image: url("./contact-us-form-dropdown-arrow.svg");
   background-position: calc(100% - 10px) 50%;
   background-repeat: no-repeat;
   border: 1px solid #4a4a4a;
