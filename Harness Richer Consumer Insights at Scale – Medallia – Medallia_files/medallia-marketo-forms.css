@@ -1,0 +1,747 @@
+.form .mktoForm .mktoFormRow,
+.form .mktoForm .mktoFormRow .mktoFormCol,
+.form .mktoForm .mktoFormRow .mktoFormCol .mktoFieldWrap {
+  /* override inline style */
+  width: 100%;
+}
+
+.form.form--compact .mktoFormRow .mktoFormCol .mktoOffset {
+  display: none;
+}
+
+.form.form--compact .mktoFormRow .mktoFormCol .mktoFieldWrap .mktoGutter,
+.form .mktoFormRow .mktoFormCol .mktoFieldWrap .mktoGutter {
+  display: none;
+}
+
+.form .mktoForm input[type="text"],
+.form .mktoForm input[type="tel"],
+.form .mktoForm input[type="email"],
+.form .mktoForm input[type="date"],
+.form .mktoForm input[type="url"] {
+  background-color: #fff;
+  border: 1px solid #4a4a4a;
+  border-radius: initial;
+  box-shadow: none;
+  color: #4e4e4e;
+  display: block;
+  font-family: "Graphik Web", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  padding: 0 0 0 10px;
+  /* override inline style */
+  width: 100% !important;
+}
+
+.form.form--compact .mktoForm input[type="text"],
+.form.form--compact .mktoForm input[type="tel"],
+.form.form--compact .mktoForm input[type="email"],
+.form.form--compact .mktoForm input[type="date"],
+.form.form--compact .mktoForm input[type="url"] {
+  background-color: #f5f5f5;
+  border: none;
+  color: #4a4a4e;
+  height: 50px;
+}
+
+.form .mktoForm input[type="text"]::placeholder,
+.form .mktoForm input[type="tel"]::placeholder,
+.form .mktoForm input[type="email"]::placeholder,
+.form .mktoForm input[type="date"]::placeholder,
+.form .mktoForm input[type="url"]::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b1b1b1;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form .mktoForm input[type="text"]:-ms-input-placeholder,
+.form .mktoForm input[type="tel"]:-ms-input-placeholder,
+.form .mktoForm input[type="email"]:-ms-input-placeholder,
+.form .mktoForm input[type="date"]:-ms-input-placeholder,
+.form .mktoForm input[type="url"]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b1b1b1;
+}
+
+.form .mktoForm input[type="text"]::-ms-input-placeholder,
+.form .mktoForm input[type="tel"]::-ms-input-placeholder,
+.form .mktoForm input[type="email"]::-ms-input-placeholder,
+.form .mktoForm input[type="date"]::-ms-input-placeholder,
+.form .mktoForm input[type="url"]::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #b1b1b1;
+}
+
+.form .mktoForm input[type="text"]:focus,
+.form .mktoForm input[type="tel"]:focus,
+.form .mktoForm input[type="email"]:focus,
+.form .mktoForm input[type="date"]:focus,
+.form .mktoForm input[type="url"]:focus {
+  outline: none;
+}
+
+.form .mktoForm textarea {
+  border: 1px solid #cdcdcd;
+  border-radius: 0;
+  box-shadow: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 40px;
+  min-height: 90px;
+  padding: 0 0 0 10px;
+  width: 100%;
+}
+
+.form.form--two-col .mktoForm .mktoFormRow:has(textarea) .mktoLabel {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  width: 100% !important;
+}
+
+.form.form--two-col .mktoForm .mktoFormRow:has(textarea) {
+  width: 100%;
+}
+
+.form.form--two-col .mktoForm .mktoFormRow .mktoFieldWrap textarea {
+  width: 100% !important;
+}
+
+.form.form--compact .mktoForm textarea {
+  background-color: #f5f5f5;
+  border: none;
+  color: #4a4a4e;
+}
+
+.form .mktoForm textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1; /* Firefox */
+  color: #aaa;
+}
+
+.form .mktoForm textarea::-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #aaa;
+}
+
+.form .mktoForm textarea::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #aaa;
+}
+
+.form .mktoForm textarea:focus {
+  outline: none;
+}
+
+.form .mktoForm .mktoFormRow label {
+  display: none;
+}
+
+.form .mktoForm .mktoFormRow .mktoCheckboxList label {
+  display: block;
+}
+
+.form .mktoForm select.mktoField {
+  -webkit-appearance: none;
+  background-image: url("https://www.medallia.com/wp-content/themes/medallia-2017/images/contact-us-form-dropdown-arrow.svg");
+  background-position: calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  border: 1px solid #4a4a4a;
+  box-shadow: none;
+  color: #aaa;
+  cursor: pointer;
+  display: block;
+  font-family: "Graphik Web", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  height: 40px;
+  opacity: 1;
+  outline: none;
+  padding: 0 0 0 10px;
+  position: relative;
+  text-align: left;
+  line-height: 45px;
+  /* override inline style */
+  width: 100% !important;
+  background-color: white;
+}
+
+.form.form--compact .mktoForm select.mktoField {
+  background-color: #f5f5f5;
+  border: none;
+  height: 50px;
+}
+
+.form .mktoForm select.mktoField:focus {
+  outline: none;
+}
+
+.form .mktoForm .mktoFormRow .mktoCheckboxList {
+  border: none;
+  padding: 0;
+  /* override inline style */
+  width: 100% !important;
+}
+
+.form .mktoForm .mktoFormRow .mktoCheckboxList > label {
+  color: #4a4a4a;
+  display: block;
+  font-family: "Graphik Web", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 0;
+  min-height: 12px;
+  padding: 0 0 0 25px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.form .mktoForm .mktoFormRow .mktoCheckboxList > label a {
+  color: #4a4a4a;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.form .mktoForm .mktoFormRow .mktoCheckboxList [type="checkbox"] {
+  display: none;
+}
+
+.form
+  .mktoForm
+  .mktoFormRow
+  .mktoCheckboxList
+  [type="checkbox"]
+  + label:before {
+  border-radius: 2px;
+  box-shadow: none;
+  content: "";
+  cursor: pointer;
+  font-family: "Graphik Web", Arial, sans-serif;
+  font-size: 16px;
+  height: 16px;
+  left: initial;
+  line-height: 16px;
+  margin-left: -25px;
+  position: absolute;
+  width: 16px;
+}
+
+.form
+  .mktoForm
+  .mktoFormRow
+  .mktoCheckboxList
+  [type="checkbox"]:checked
+  + label:before {
+  color: #000;
+  content: "\2713 ";
+}
+
+.form
+  .mktoForm
+  .mktoFormRow
+  .mktoCheckboxList
+  [type="checkbox"]:checked
+  + label:hover:before {
+  color: #000;
+}
+
+.form
+  .mktoForm
+  .mktoFormRow
+  .mktoCheckboxList
+  [type="checkbox"]
+  + label:before {
+  border: 1px solid #4a4a4a;
+  background-color: #fff;
+  background: #fff;
+}
+
+.form .mktoForm .mktoError .mktoErrorMsg {
+  color: #fff;
+}
+
+.form .mktoForm .mktoFormRow .mktoLabel .mktoAsterix {
+  color: #bf0000;
+}
+
+.form.form--dark .mktoForm .mktoFormRow .mktoCheckboxList > label {
+  color: #fff;
+}
+
+.form.form--dark .mktoForm .mktoFormRow .mktoCheckboxList > label a {
+  color: #fff;
+}
+
+.form.form--dark .mktoForm .mktoFormRow .mktoHtmlText {
+  color: #fff;
+}
+
+.form.form--dark
+  .mktoForm
+  .mktoFormRow
+  .mktoCheckboxList
+  [type="checkbox"]:checked
+  + label:before {
+  color: #fff;
+}
+
+.form.form--dark
+  .mktoForm
+  .mktoFormRow
+  .mktoCheckboxList
+  [type="checkbox"]:checked
+  + label:hover:before {
+  color: #fff;
+}
+
+.form.form--dark
+  .mktoForm
+  .mktoFormRow
+  .mktoCheckboxList
+  [type="checkbox"]
+  + label:before {
+  border: 1px solid #52b1ff;
+  background-color: #52b1ff;
+  background: #52b1ff;
+}
+
+.form .mktoForm .mktoButtonRow {
+  width: 100%;
+}
+
+.form .mktoForm .mktoButtonRow .mktoButtonWrap {
+  /* override inline style */
+  margin-left: 0 !important;
+  margin: 0;
+}
+
+.form .mktoForm .mktoButtonRow .mktoButtonWrap button {
+  -webkit-appearance: none;
+  background: #4050c6;
+  border: 1px solid #4050c6;
+  border-radius: 0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-family: "Graphik Web", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 52px;
+  line-height: 16px;
+  margin: 10px 0;
+  padding: 15px 20px 17px;
+  position: relative;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.form .mktoForm .mktoButtonRow .mktoButtonWrap button:hover {
+  background-color: #fff;
+  border: 1px solid #4a4a4a;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+  color: #4050c6;
+}
+
+.form.form--dark .mktoForm .mktoButtonRow .mktoButtonWrap button {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #4050c6;
+}
+
+.form.form--dark .mktoForm .mktoButtonRow .mktoButtonWrap button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form.form--two-col form,
+.form.form--center form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0;
+  text-align: left;
+}
+
+/*
+Class added through JavaScript for Firefox
+*/
+.form.form--two-col .mktoForm .medallia-checkbox-row {
+  width: 100%;
+}
+
+/*
+Firefox lacks supposrt of has pseudo class
+*/
+.form.form--two-col .mktoForm .mktoFormRow:has(.mktoCheckboxList) {
+  width: 100%;
+}
+
+.form.form--two-col .mktoForm .mktoFormRow:has(.mktoHtmlText) {
+  width: 100%;
+}
+
+.form.form--two-col .mktoForm .mktoFormRow .mktoFormCol:has(.mktoHtmlText) {
+  margin: 0 !important;
+}
+
+.form.form--two-col .mktoForm .mktoHtmlText h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.form.form--two-col .mktoForm .mktoFormRow:has(.mktoPlaceholder) {
+  display: none;
+}
+
+.form.form--two-col
+  .mktoForm
+  .mktoFormRow:nth-child(even):has(+ .mktoFormRow):not(
+    :has(+ .mktoFormRow .mktoFieldWrap)
+  ) {
+  width: 100%;
+}
+
+.form.form--two-col
+  .mktoForm
+  .mktoFormRow:nth-child(even):has(+ .mktoFormRow):has(
+    + .mktoFormRow .mktoCheckboxList
+  ) {
+  width: 100%;
+}
+
+.form.form--two-col .mktoForm .mktoFormRow select[multiple] {
+  height: unset;
+}
+
+.form.form--two-col .mktoForm .mktoFormRow:has(select[multiple]) {
+  height: auto;
+  width: 100% !important;
+}
+
+.std-footer-form
+  .c-medallia-form
+  .form
+  .mktoForm
+  .mktoFormRow:has(select[multiple])
+  .mktoLabel,
+.std-footer-form
+  .c-medallia-form
+  .form
+  .mktoForm
+  .mktoFormRow:has(textarea)
+  .mktoLabel {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  width: 100% !important;
+}
+
+.std-footer-form
+  .c-medallia-form
+  .form
+  .mktoForm
+  .mktoFormRow:has(select[multiple])
+  .mktoLabel,
+.std-footer-form
+  .c-medallia-form
+  .form
+  .mktoForm
+  .mktoFormRow:has(textarea)
+  .mktoLabel {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  width: 100% !important;
+}
+
+.std-footer-form
+  .c-medallia-form
+  .form
+  .mktoForm
+  .mktoFormRow:has(select[multiple])
+  .mktoAsterix,
+.std-footer-form
+  .c-medallia-form
+  .form
+  .mktoForm
+  .mktoFormRow:has(textarea)
+  .mktoAsterix {
+  float: left;
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+.std-footer-form
+  .c-medallia-form
+  .form
+  .mktoForm
+  .mktoFormRow
+  select[multiple] {
+  height: auto;
+}
+
+.std-footer-form .medallia-loader__wrap {
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 2rem;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 0;
+}
+
+.std-footer-form .medallia-loader__wrap:before {
+  animation: rotate 4s linear infinite;
+  background-image: linear-gradient(#00bfa5, #00bfa5),
+    linear-gradient(#fff, #fff), linear-gradient(#fff, #fff),
+    linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  content: "";
+  height: 250%;
+  left: -50%;
+  position: absolute;
+  top: -50%;
+  width: 200%;
+  z-index: -2;
+}
+
+.std-footer-form .medallia-loader__wrap:after {
+  background: #fff;
+  border-radius: 5px;
+  content: "";
+  height: calc(100% - 12px);
+  left: 6px;
+  position: absolute;
+  top: 6px;
+  width: calc(100% - 12px);
+  z-index: -1;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* FORM HTML STYLING */
+.form .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText strong {
+  font-size: 20px;
+}
+.form .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText,
+.form .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText a {
+  text-decoration: underline;
+}
+
+.form.form--dark .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText,
+.form.form--dark .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText a,
+.form.form--dark .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText strong,
+.form.form--dark .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText p {
+  color: #fff;
+}
+
+.form .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText,
+.form .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText a,
+.form .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText strong,
+.form .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText p {
+  color: #4e4e4e;
+}
+
+.form .mktoForm .mktoFormRow.full-width {
+  width: 100% !important;
+}
+
+.form .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText {
+  width: 100% !important;
+}
+
+/* BEGIN STYLES FOR PARTNER DEAL REGISTRATION */
+#partner-deal-registration
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(textarea) {
+  width: 100%;
+}
+
+#partner-deal-registration
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(#Live_Opportunity__c) {
+  width: 100%;
+}
+
+#partner-deal-registration
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(#Reseller_Opportunity__c) {
+  width: 100%;
+}
+
+#partner-deal-registration
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(#partnerChampion) {
+  width: 100%;
+}
+
+#partner-deal-registration
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(#partnerEconomicBuyer) {
+  width: 100%;
+}
+
+#partner-deal-registration
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow
+  .mktoFieldWrap
+  textarea {
+  width: 100% !important;
+}
+
+#partner-deal-registration .form .mktoForm .mktoFormRow label {
+  color: #fff;
+  display: block;
+  width: 100% !important;
+}
+
+#partner-deal-registration
+  .form.form--dark
+  .mktoForm
+  .mktoFormRow
+  .mktoHtmlText
+  span
+  strong {
+  color: #fff;
+}
+/* END STYLES FOR PARTNER DEAL REGISTRATION */
+
+/* BEGIN STYLES FOR PARTNER REQUEST */
+/*
+Firefox lacks supposrt of has pseudo class
+*/
+#partner-request .form.form--two-col .mktoForm .mktoFormRow:has(textarea),
+#partner-request
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(select:not(#Country)),
+#partner-request
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(#Employee_Name__c) {
+  width: 100%;
+}
+
+#partner-request
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(textarea)
+  textarea,
+#partner-request
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(select:not(#Country))
+  select {
+  height: unset;
+  width: 100% !important;
+}
+
+#partner-request
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(select)
+  select[multiple] {
+  background-image: unset;
+}
+
+#partner-request
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(textarea)
+  .mktoLabel,
+#partner-request
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(select[multiple])
+  .mktoLabel {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  width: 100% !important;
+}
+
+#partner-request
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(textarea)
+  .mktoAsterix,
+#partner-request
+  .form.form--two-col
+  .mktoForm
+  .mktoFormRow:has(select[multiple])
+  .mktoAsterix {
+  float: left;
+  padding-left: 0;
+  padding-right: 5px;
+}
+/* END STYLES FOR PARTNER REQUEST */
+
+@media (min-width: 768px) {
+  .form.form--two-col .mktoForm {
+    width: 690px !important;
+  }
+
+  .form .mktoForm textarea {
+    margin-bottom: 30px;
+  }
+
+  .form.form--two-col .mktoForm .mktoFormRow {
+    width: 340px;
+  }
+}
+
+@media (min-width: 992px) {
+  .form.form--two-col .mktoForm {
+    width: 649px !important;
+  }
+
+  .form.form--two-col .mktoForm .mktoFormRow {
+    width: 314px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form.form--two-col .mktoForm {
+    width: 606px !important;
+  }
+
+  .form.form--two-col .mktoForm .mktoFormRow {
+    width: 288px;
+  }
+}
+
+@media only screen and (max-width: 480px),
+  only screen and (max-device-width: 480px),
+  only screen and (max-device-height: 480px) {
+  .mktoMobileShow .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText,
+  .mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText * {
+    -webkit-box-sizing: unset;
+    -moz-box-sizing: unset;
+    box-sizing: unset;
+    -moz-box-sizing: unset;
+    padding: 0;
+  }
+}
